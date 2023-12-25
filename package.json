@@ -1,5 +1,6 @@
 {
   "name": "crypto-tracker",
+  "homepage": "http://Fardeen787.github.io/CryptoDeck",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +12,7 @@
     "axios": "^0.21.1",
     "chart.js": "^3.5.1",
     "firebase": "^9.9.0",
+    "gh-pages": "^4.0.0",
     "react": "^17.0.2",
     "react-alice-carousel": "^2.5.1",
     "react-chartjs-2": "^3.0.4",
@@ -23,6 +25,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
